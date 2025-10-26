@@ -4,7 +4,7 @@ import Tasks from "./components/Tasks";
 import { v4 } from "uuid";
 
 function App() {
-  const [tasks, setTasks] = useState("")
+  const [tasks, setTasks] = useState("");
   function onTaskClick(taskId) {
     const newTasks = tasks.map((task) => {
       // PRECISO ATUALIZAR ESSA TAREFA
@@ -28,8 +28,8 @@ function App() {
       title,
       description,
       isCompleted: false,
-    }
-    setTasks([...tasks, newTask])
+    };
+    setTasks([...tasks, newTask]);
   }
 
   return (
