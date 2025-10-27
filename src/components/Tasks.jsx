@@ -29,13 +29,13 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
             </button>
             <button
               onClick={() => onSeeDetailsClick(task)}
-              className="border border-neutral-600 bg-neutral-700 p-2 rounded-lg text-neutral-300 shadow"
+              className="border border-neutral-600 bg-neutral-700 p-2 rounded-lg text-neutral-300 shadow-md hover:brightness-110 active:scale-95 transition-transform active:brightness-110"
             >
               <ChevronRightIcon />
             </button>
             <button
               onClick={() => onDeleteTaskClick(task.id)}
-              className="border border-neutral-600 bg-red-800 p-2 rounded-xl text-neutral-300 shadow"
+              className="border border-neutral-600 bg-red-800 p-2 rounded-xl text-neutral-300 shadow-md hover:brightness-110 active:scale-95 transition-transform active:brightness-110"
             >
               <TrashIcon />
             </button>

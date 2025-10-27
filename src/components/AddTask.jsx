@@ -16,7 +16,7 @@ function AddTask({ onAddTaskSubmit }) {
       <input
         type="text"
         placeholder="Digite a descrição da tarefa"
-        className="text-neutral-100 placeholder-neutral-500 bg-neutral-800 border border-neutral-700 outline-1 rounded-lg px-4 py-2 shadow-md"
+        className="text-neutral-100 placeholder-neutral-500 bg-neutral-800 border border-neutral-700 outline-1 rounded-lg px-4 py-2 shadow-md "
         value={description}
         onChange={(event) => setDescription(event.target.value)}
       />
@@ -30,7 +30,7 @@ function AddTask({ onAddTaskSubmit }) {
           setTitle("");
           setDescription("");
         }}
-        className="bg-purple-950 border border-purple-800 text-white px-4 py-2 rounded-lg font-medium shadow-md"
+        className="bg-purple-950 border border-purple-800 text-white px-4 py-2 rounded-lg font-medium shadow-md hover:brightness-110 active:scale-95 transition-transform active:brightness-110"
       >
         Adicionar
       </button>

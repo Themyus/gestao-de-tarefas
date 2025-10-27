@@ -2,9 +2,13 @@ import { useState } from "react";
 import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
 import { v4 } from "uuid";
+import { useEffect } from "react";
 
 function App() {
   const [tasks, setTasks] = useState("");
+
+  useEffect(() => {}, [tasks]) // Executa a função (primeiro elemento antes da vírgula) sempre que algum valor que for colocado dentro da lista (segundo elemento depois da vírgula) for alterado
+
   function onTaskClick(taskId) {
     const newTasks = tasks.map((task) => {
       // PRECISO ATUALIZAR ESSA TAREFA
