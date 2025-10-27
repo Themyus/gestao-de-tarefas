@@ -5,9 +5,13 @@ import { v4 } from "uuid";
 import { useEffect } from "react";
 
 function App() {
-  const [tasks, setTasks] = useState("");
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
 
-  useEffect(() => {}, [tasks]) // Executa a função (primeiro elemento antes da vírgula) sempre que algum valor que for colocado dentro da lista (segundo elemento depois da vírgula) for alterado
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]); // Executa a função (primeiro elemento antes da vírgula) sempre que algum valor que for colocado dentro da lista (segundo elemento depois da vírgula) for alterado
 
   function onTaskClick(taskId) {
     const newTasks = tasks.map((task) => {
