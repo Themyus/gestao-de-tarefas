@@ -11,10 +11,10 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
     navigate(`/task?${query.toString()}`);
   }
   return (
-    <ul className="space-y-4 p-6 border-4 border-neutral-800 bg-neutral-900 rounded-2xl shadow-md">
+    <ul className="space-y-4 p-6 border-2 border-neutral-800 bg-neutral-900 rounded-2xl shadow-md">
       {tasks.length === 0 ? (
         <li className="text-neutral-400 text-center py-1">
-          Nenhuma tarefa pendente
+          No pending tasks
         </li>
       ) : (
         tasks.map((task) => (
