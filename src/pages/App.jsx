@@ -3,6 +3,7 @@ import Tasks from "../components/Tasks";
 import { v4 } from "uuid";
 import { useEffect } from "react";
 import { useState } from "react";
+import Title from "../components/Title";
 
 function App() {
   const [tasks, setTasks] = useState(
@@ -58,9 +59,7 @@ function App() {
   return (
     <div className="w-screen h-screen bg-zinc-950 flex justify-center py-10">
       <div className="w-[500px] space-y-4">
-        <h1 className="text-3xl text-white font-bold font-inter text-center">
-          Task Manager
-        </h1>
+        <Title>Task Manager</Title>
         <AddTask onAddTaskSubmit={onAddTaskSubmit} />
         <Tasks
           tasks={tasks}
