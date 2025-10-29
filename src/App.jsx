@@ -1,9 +1,8 @@
-import AddTask from "../components/AddTask";
-import Tasks from "../components/Tasks";
+import { useEffect, useState } from "react";
+import AddTask from "./components/AddTask";
+import Tasks from "./components/Tasks";
 import { v4 } from "uuid";
-import { useEffect } from "react";
-import { useState } from "react";
-import Title from "../components/Title";
+import Title from "./components/Title";
 
 function App() {
   const [tasks, setTasks] = useState(
@@ -15,7 +14,7 @@ function App() {
   }, [tasks]); // Executa a função (primeiro elemento antes da vírgula) sempre que algum valor que for colocado dentro da lista (segundo elemento depois da vírgula) for alterado
 
   // useEffect(() => {
-  //   async function fetchTasks() {
+  //   const fetchTasks = async () => {
   //     const response = await fetch(
   //       "https://jsonplaceholder.typicode.com/todos?_limit=10",
   //       {
@@ -24,10 +23,10 @@ function App() {
   //     );
   //     const data = await response.json();
   //     setTasks(data);
-  //   }
-  //   # SE EU QUISESSE, EU PODERIA CHAMAR UMA API PARA PEGAR AS TAREFAS
-  //   fetchTasks();
-  // }, []); # Quando é passado como segundo parâmetro do useEffect uma lista vazia, significa que essa função só é executada uma vez. E essa vez é quando o usuário acaba de acessar a aplicação pela primeira vez
+  //   };
+  //   # SE QUISER, VOCÊ PODE CHAMAR UMA API PARA PEGAR AS TAREFAS
+  //   # fetchTasks();
+  // }, [] ); # Quando é passado como segundo parâmetro do useEffect uma lista vazia, significa que essa função só é executada uma vez. E essa vez é quando o usuário acaba de acessar a aplicação pela primeira vez
 
   function onTaskClick(taskId) {
     const newTasks = tasks.map((task) => {
@@ -35,6 +34,7 @@ function App() {
       if (task.id === taskId) {
         return { ...task, isCompleted: !task.isCompleted };
       }
+
       // NÃO PRECISO ATUALIZAR ESSA TAREFA
       return task;
     });
@@ -59,12 +59,12 @@ function App() {
   return (
     <div className="w-screen h-screen bg-zinc-950 flex justify-center py-10">
       <div className="w-[500px] space-y-4">
-        <Title>Task Manager</Title>
+        <Title>Gerenciador de Tarefas</Title>
         <AddTask onAddTaskSubmit={onAddTaskSubmit} />
         <Tasks
           tasks={tasks}
           onTaskClick={onTaskClick}
-          onDeleteTaskClick={onDeleteTaskClick} // Propriedades sendo passadas pros componentes pra eles reutilizarem
+          onDeleteTaskClick={onDeleteTaskClick}
         />
       </div>
     </div>
