@@ -59,7 +59,7 @@ function App() {
   return (
     <div className="w-screen h-screen bg-zinc-950 flex justify-center py-10">
       <div className="w-[500px] space-y-4">
-        <Title>Gerenciador de Tarefas</Title>
+        <Title>Task Manager</Title>
         <AddTask onAddTaskSubmit={onAddTaskSubmit} />
         <Tasks
           tasks={tasks}
