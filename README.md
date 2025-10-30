@@ -23,6 +23,6 @@ LocalStorage API — Persistent browser storage
   
 ### 🌐 Live Demo
 #### The project is deployed and can be accessed at:  
-👉 https://task-manager-git-main-themyus-projects.vercel.app  
+👉 [Run the project](https://task-manager-git-main-themyus-projects.vercel.app)  
   
 #### Try adding, viewing, and deleting tasks directly in your browser — no local setup required.
