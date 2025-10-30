@@ -25,4 +25,4 @@
 #### The project is deployed and can be accessed at:  
 👉 [Run the project](https://task-manager-git-main-themyus-projects.vercel.app)  
   
-#### Try adding, viewing, and deleting tasks directly in your browser — no local setup required.
+#### Try adding, viewing, and deleting tasks directly in your browser, no local setup required.
