@@ -13,13 +13,13 @@
 ⚡ Smooth navigation: page transitions handled with React Router DOM.  
   
 ### Technologies
-React — Component creation and state management with hooks  
-React Router DOM — Routing and page navigation  
-React-Lucide — Lightweight, consistent icons for the interface  
-uuid — Generate unique identifiers for each task  
-Vite — Fast and modern development environment  
-Tailwind CSS — Simple, elegant, and responsive styling  
-LocalStorage API — Persistent browser storage  
+- **React** — Component creation and state management with hooks  
+- **React Router DOM** — Routing and page navigation  
+- **React-Lucide** — Lightweight, consistent icons for the interface  
+- **uuid** — Generate unique identifiers for each task  
+- **Vite** — Fast and modern development environment  
+- **Tailwind CSS** — Simple, elegant, and responsive styling  
+- **LocalStorage API** — Persistent browser storage  
   
 ### 🌐 Live Demo
 #### The project is deployed and can be accessed at:  
