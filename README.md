@@ -1,7 +1,7 @@
 # Task Manager  
   
 **A simple and straightforward application to organize daily tasks.**  
-**Built with React, using Vite as a bundler and Tailwind CSS for a clean, responsive interface.** 
+**Built with React, using Vite as a bundler and Tailwind CSS for a clean, responsive interface.**  
 **Tasks are stored in Local Storage, allowing quick and persistent access — even after closing the browser.**  
 
 ### Features  
